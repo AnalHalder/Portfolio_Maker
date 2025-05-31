@@ -7,6 +7,7 @@ function Navbar() {
   const { portfolioData } = useContext(PortfolioContext);
   const location = useLocation();
   const id = portfolioData?._id; 
+  if(!portfolioData) return null;
 
   return (
     <div className="sticky top-0 z-50 w-full">
