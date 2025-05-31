@@ -18,10 +18,10 @@ function Introduction() {
 
   return (
     <div className="flex flex-col justify-center items-center h-screen">
-      <div className="text-center fixed">
+      <div className="text-center fixed mb-8">
         <h3 className="text-lg md:text-3xl text-gray-100">Hi, I am</h3>
         <h1 className="text-4xl mb-3 md:text-8xl font-bold text-white">{name}</h1>
-        <h3 className="text-lg md:text-4xl text-gray-100">{bio}</h3>
+        <h3 className="text-lg font-medium md:text-3xl text-gray-100">{bio}</h3>
       </div>
 
       {/* Links Section */}
