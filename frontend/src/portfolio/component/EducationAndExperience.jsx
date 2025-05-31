@@ -22,10 +22,9 @@ function EducationAndExperience() {
           <div className="flex flex-col gap-6 mt-4">
             {experience.map((exp, idx) => (
               <div key={idx} className="border border-pink-500 rounded-lg p-6 shadow-md">
-                <h3 className="text-2xl font-bold text-white">{exp.role}</h3>
-                <p className="text-gray-300">{exp.company}</p>
-                <p className="text-gray-400 text-sm italic">{exp.duration}</p>
+                <h3 className="text-2xl font-bold text-white">{exp.companyName}</h3>
                 <p className="text-gray-200 mt-2">{exp.description}</p>
+                <p className="text-gray-300 text-sm italic">Duration : {exp.duration}</p>
               </div>
             ))}
           </div>
@@ -41,10 +40,10 @@ function EducationAndExperience() {
           <div className="flex flex-col gap-6 mt-4">
             {education.map((edu, idx) => (
               <div key={idx} className="border border-pink-500 rounded-lg p-6 shadow-md">
-                <h3 className="text-2xl font-bold text-white">{edu.degree}</h3>
-                <p className="text-gray-300">{edu.institution}</p>
-                <p className="text-gray-400 text-sm italic">{edu.duration}</p>
-                <p className="text-gray-200 mt-2">{edu.description}</p>
+                <h3 className="text-2xl font-bold text-white">{edu.institution}</h3>
+                <h4 className="text-gray-300 text-xl">{edu.degree}</h4>
+                <p className="text-gray-400">Grade / CGPA : {edu.grade}</p>
+                <p className="text-gray-400 text-sm italic">Duration : {edu.duration}</p>
               </div>
             ))}
           </div>

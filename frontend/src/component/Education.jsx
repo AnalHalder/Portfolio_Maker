@@ -134,7 +134,7 @@ function Education() {
           <div key={index} className="border p-4 rounded mb-4 space-y-2">
             <input
               type="text"
-              placeholder="Company Name"
+              placeholder="Company Name | Job Role"
               value={exp.companyName}
               onChange={(e) => handleExperienceChange(index, 'companyName', e.target.value)}
               className="w-full p-2 border rounded"

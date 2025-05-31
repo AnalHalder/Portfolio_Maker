@@ -63,18 +63,18 @@ function SkillsAndProject() {
               )}
 
               <div className="flex gap-4 mt-4">
-                <button
+                {project.githubLink ? (<button
                   onClick={() => window.open(project.githubLink)}
                   className="bg-pink-600 hover:bg-pink-700 text-white px-4 py-2 rounded-md font-semibold"
                 >
                   Code
-                </button>
-                <button
+                </button>) : (<p> </p>)}
+                {project.liveLink ? (<button
                   onClick={() => window.open(project.liveLink)}
                   className="bg-pink-600 hover:bg-pink-700 text-white px-4 py-2 rounded-md font-semibold"
                 >
                   Demo
-                </button>
+                </button>) : (<p> </p>)}
               </div>
             </div>
           ))}
