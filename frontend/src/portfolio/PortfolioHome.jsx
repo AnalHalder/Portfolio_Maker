@@ -33,8 +33,8 @@ function PortfolioHome() {
         <Navbar />
         <Routes>
           <Route path="/" element={<Introduction />} />
-          <Route path="/:skills&projects" element={<SkillsAndProject />} />
-          <Route path="/:education&experience" element={<EducationAndExperience />} />
+          <Route path="/skills&projects" element={<SkillsAndProject />} />
+          <Route path="/education&experience" element={<EducationAndExperience />} />
         </Routes>
       </div>
     </BackgroundImage>
