@@ -43,7 +43,6 @@ const portfolioSchema = mongoose.Schema({
             githubLink: { type: String },
             liveLink: { type: String },
             techStack: [{ type: String }],
-            tags: [{ type: String }],
         }
     ],
     education: [
