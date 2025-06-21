@@ -41,7 +41,6 @@ function Skills() {
           githubLink: '',
           liveLink: '',
           techStack: [],
-          tags: [],
         },
       ],
     }));
